@@ -366,3 +366,6 @@ bash-5.1# mc admin decommission status myminio
 │ 1st │ http://minio0{5...8}/mnt/data-0 │ 42.5% (total: 60 GiB) │ Active   │
 └─────┴─────────────────────────────────┴───────────────────────┴──────────┘
 ```
+
+
+## SOLUTION: Replace the new mount volume with one that has more free disk space
