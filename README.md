@@ -260,3 +260,38 @@ Decommission of pool http://minio0{1...4}/mnt/data-0 is complete, you may now re
 ```
 > [!NOTE]  
 > At this point, all data in pool 1st has been migrated to pool 2nd and we can remove pool 1st from Minio Cluster to use the storage in pool 2nd (right after removing pool 1st, pool 2nd will automatically be changed to 1st when restarting the cluster).
+
+### Step-by-step remove old pool
+*Stop Minio cluster to adjust configuration to remove old pool:*
+```
+# docker-compose down
+```
+
+*Edit configure docker-compose according to the template below on all nodes:*
+```
+services:
+  <NODE_NAME>:
+    image: 'quay.io/minio/minio:RELEASE.2025-01-20T14-49-07Z'
+    restart: always
+    environment:
+      MINIO_ROOT_USER: "<MINIO_ROOT_USER>"
+      MINIO_ROOT_PASSWORD: "<MINIO_ROOT_PASSWORD>"
+      TZ: "<LOCAL_TIMEZONE>"
+    command: server --console-address ":9001" http://minio0{5...8}/mnt/data-0
+    ports:
+      - 9000:9000
+      - 9001:9001
+    volumes:
+      - /mnt/data-0:/mnt/data-0
+    networks:
+      - minio-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 1m
+networks:
+  minio-net:
+    driver: bridge
+```
