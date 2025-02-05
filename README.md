@@ -13,7 +13,8 @@
 
 
 ## Add new pool & decommission a server pool
-**Problem: I currently have a pool with a used storage capacity of 85%. Therefore, I need to have an upgrade solution to increase the storage capacity of Minio before running out of storage capacity**
+> [!IMPORTANT]  
+> Problem: I currently have a pool with a used storage capacity of 85%. Therefore, I need to have an upgrade solution to increase the storage capacity of Minio before running out of storage capacity
 ###  Information about the servers deploying the lab
 | Hostname | IP Address | Pools | Description | 
 | :--- | :--- | :--- | :--- |
