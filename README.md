@@ -216,3 +216,10 @@ bash-5.1# mc admin decommission status myminio
 │ 2nd │ http://minio0{5...8}/mnt/data-0 │ 0.3% (total: 60 GiB)  │ Active │
 └─────┴─────────────────────────────────┴───────────────────────┴────────┘
 ```
+
+*Start decommission pool "http://minio0{1...4}/mnt/data-0":*
+```
+bash-5.1# mc admin decommission start myminio/ http://minio0{1...4}/mnt/data-0  
+                             
+Decommission started successfully for `http://minio0{1...4}/mnt/data-0`.
+```
