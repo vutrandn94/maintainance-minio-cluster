@@ -10,3 +10,13 @@
 | Replace the new mount volume with one that has more free disk space | Take advantage of the HEALING feature | Expand storage capacity, replace/upgrade disk storage |
 
 *In this article, I will describe how to do it: "Add new pool & decommission a server pool" and "replace the new mount volume with one that has more free disk space"*
+
+
+## Add new pool & decommission a server pool
+###  Information about the servers deploying the lab
+| Hostname | IP Address |
+| :--- | :--- |
+| minio01 | 172.31.40.231 |
+| minio02 | 172.31.44.99 |
+| minio03 | 172.31.36.91 |
+| minio04 | 172.31.40.139 |
