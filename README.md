@@ -368,4 +368,4 @@ bash-5.1# mc admin decommission status myminio
 ```
 
 
-## SOLUTION: Replace the new mount volume with one that has more free disk space
+## SOLUTION: Replace mount volume with one that has more free disk space (Take advantage of the HEALING feature)
