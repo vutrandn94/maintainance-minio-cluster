@@ -242,6 +242,21 @@ bash-5.1# mc admin decommission status myminio
 └─────┴─────────────────────────────────┴───────────────────────┴──────────┘
 ```
 
-*Wait for the pool status to change from "Draining" to "Complete" then the pool decommission process is complete*
+*Wait for the pool status to change from "Draining" to "Complete" then the pool decommission process is complete:*
+```
+bash-5.1# mc admin decommission status myminio
+
+┌─────┬─────────────────────────────────┬───────────────────────┬──────────┐
+│ ID  │ Pools                           │ Drives Usage          │ Status   │
+│ 1st │ http://minio0{1...4}/mnt/data-0 │ 1.0% (total: 20 GiB)  │ Complete │
+│ 2nd │ http://minio0{5...8}/mnt/data-0 │ 42.5% (total: 60 GiB) │ Active   │
+└─────┴─────────────────────────────────┴───────────────────────┴──────────┘
+```
+
+```
+bash-5.1# mc admin decommission status myminio http://minio0{1...4}/mnt/data-0
+
+Decommission of pool http://minio0{1...4}/mnt/data-0 is complete, you may now remove it from server command line
+```
 > [!NOTE]  
 > At this point, all data in pool 1st has been migrated to pool 2nd and we can remove pool 1st from Minio Cluster to use the storage in pool 2nd (right after removing pool 1st, pool 2nd will automatically be changed to 1st when restarting the cluster).
