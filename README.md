@@ -14,9 +14,9 @@
 
 ## Add new pool & decommission a server pool
 ###  Information about the servers deploying the lab
-| Hostname | IP Address |
-| :--- | :--- |
-| minio01 | 172.31.40.231 |
-| minio02 | 172.31.44.99 |
-| minio03 | 172.31.36.91 |
-| minio04 | 172.31.40.139 |
+| Hostname | IP Address | Pools | Description | 
+| :--- | :--- | :--- | :--- |
+| minio01 | 172.31.40.231 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below  | 
+| minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
+| minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
+| minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
