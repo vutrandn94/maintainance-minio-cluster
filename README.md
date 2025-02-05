@@ -31,6 +31,9 @@
 | minio08 | 172.31.38.9 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool |
 
 ###  Template configure docker-compose before adding new pool on all nodes
+> [!TIP]
+> Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
+
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
 | Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
@@ -109,6 +112,9 @@ bash-5.1# mc admin info myminio
 ```
 
 *Edit configure docker-compose according to the template below on all nodes:*
+> [!TIP]
+> Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
+
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
 | Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
@@ -274,6 +280,9 @@ Decommission of pool http://minio0{1...4}/mnt/data-0 is complete, you may now re
 ```
 
 *Edit configure docker-compose according to the template below on all nodes:*
+> [!TIP]
+> Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
+
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
 | Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
