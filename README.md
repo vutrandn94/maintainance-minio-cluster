@@ -12,7 +12,7 @@
 *In this article, I will describe how to do it: "Add new pool & decommission a server pool" and "replace the new mount volume with one that has more free disk space"*
 
 
-## Add new pool & decommission a server pool
+## SOLUTION: Add new pool & decommission a server pool
 > [!TIP]
 > Reference source: https://min.io/docs/minio/linux/operations/install-deploy-manage/decommission-server-pool.html#
 
