@@ -39,7 +39,7 @@ services:
     environment:
       MINIO_ROOT_USER: "<MINIO_ROOT_USER>"
       MINIO_ROOT_PASSWORD: "<MINIO_ROOT_PASSWORD>"
-      TZ: "Asia/Ho_Chi_Minh"
+      TZ: "<LOCAL_TIMEZONE>"
     command: server --console-address ":9001" http://minio0{1...4}/mnt/data-0
     ports:
       - 9000:9000
