@@ -220,6 +220,24 @@ bash-5.1# mc admin decommission status myminio
 *Start decommission pool "http://minio0{1...4}/mnt/data-0":*
 ```
 bash-5.1# mc admin decommission start myminio/ http://minio0{1...4}/mnt/data-0  
-                             
+
 Decommission started successfully for `http://minio0{1...4}/mnt/data-0`.
+```
+
+*Check processs decommission status:*
+```
+bash-5.1# mc admin decommission status myminio http://minio0{1...4}/mnt/data-0
+
+Decommissioning rate at 15 MiB/sec [11 GiB/20 GiB]
+Started: 6 minutes ago
+```
+
+```
+bash-5.1# mc admin decommission status myminio
+
+┌─────┬─────────────────────────────────┬───────────────────────┬──────────┐
+│ ID  │ Pools                           │ Drives Usage          │ Status   │
+│ 1st │ http://minio0{1...4}/mnt/data-0 │ 85.2% (total: 20 GiB) │ Draining │
+│ 2nd │ http://minio0{5...8}/mnt/data-0 │ 17.6% (total: 60 GiB) │ Active   │
+└─────┴─────────────────────────────────┴───────────────────────┴──────────┘
 ```
