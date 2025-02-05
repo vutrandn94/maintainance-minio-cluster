@@ -31,6 +31,9 @@
 | minio08 | 172.31.38.9 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool |
 
 ###  Template configure docker-compose before adding new pool on all nodes
+| NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
+| :--- | :--- | :--- | :--- |
+| Minio server hostname | root user | root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
 ```
 services:
   <NODE_NAME>:
