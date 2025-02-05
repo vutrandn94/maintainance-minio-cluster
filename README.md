@@ -213,6 +213,6 @@ bash-5.1# mc admin decommission status myminio
 ┌─────┬─────────────────────────────────┬───────────────────────┬────────┐
 │ ID  │ Pools                           │ Drives Usage          │ Status │
 │ 1st │ http://minio0{1...4}/mnt/data-0 │ 85.2% (total: 20 GiB) │ Active │
-│ 2nd │ http://minio0{5...8}/mnt/data-0 │ 0.3% (total: 60 GiB) │ Active │
+│ 2nd │ http://minio0{5...8}/mnt/data-0 │ 0.3% (total: 60 GiB)  │ Active │
 └─────┴─────────────────────────────────┴───────────────────────┴────────┘
 ```
