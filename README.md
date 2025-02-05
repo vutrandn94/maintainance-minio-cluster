@@ -104,3 +104,32 @@ bash-5.1# mc admin info myminio
 ```
 # docker-compose down -d
 ```
+
+*Edit configure docker-compose according to the template below on all nodes*
+```
+services:
+  <NODE_NAME>:
+    image: 'quay.io/minio/minio:RELEASE.2025-01-20T14-49-07Z'
+    restart: always
+    environment:
+      MINIO_ROOT_USER: "<MINIO_ROOT_USER>"
+      MINIO_ROOT_PASSWORD: "<MINIO_ROOT_PASSWORD>"
+      TZ: "<LOCAL_TIMEZONE>"
+    command: server --console-address ":9001" http://minio0{1...4}/mnt/data-0 http://minio0{5...8}/mnt/data-0
+    ports:
+      - 9000:9000
+      - 9001:9001
+    volumes:
+      - /mnt/data-0:/mnt/data-0
+    networks:
+      - minio-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 1m
+networks:
+  minio-net:
+    driver: bridge
+```
