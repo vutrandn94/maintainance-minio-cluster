@@ -58,3 +58,44 @@ networks:
   minio-net:
     driver: bridge
 ```
+### Pool information before adding new pool
+```
+bash-5.1# mc admin info myminio
+●  minio01:9000
+   Uptime: 14 minutes 
+   Version: 2025-01-20T14:49:07Z
+   Network: 8/8 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  minio02:9000
+   Uptime: 14 minutes 
+   Version: 2025-01-20T14:49:07Z
+   Network: 8/8 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  minio03:9000
+   Uptime: 14 minutes 
+   Version: 2025-01-20T14:49:07Z
+   Network: 8/8 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  minio04:9000
+   Uptime: 14 minutes 
+   Version: 2025-01-20T14:49:07Z
+   Network: 8/8 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+
+┌──────┬───────────────────────┬─────────────────────┬──────────────┐
+│ Pool │ Drives Usage          │ Erasure stripe size │ Erasure sets │
+│ 1st  │ 85.2% (total: 20 GiB) │ 4                   │ 1            │
+│ 2nd  │ 10.2% (total: 60 GiB) │ 4                   │ 1            │
+└──────┴───────────────────────┴─────────────────────┴──────────────┘
+
+17 GiB Used, 4 Buckets, 4 Objects
+4 drives online, 0 drives offline, EC:2
+```
