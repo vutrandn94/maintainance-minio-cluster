@@ -30,7 +30,7 @@
 | minio07 | 172.31.47.245 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool | 
 | minio08 | 172.31.38.9 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool |
 
-###  Template configure docker-compose before adding new pool "http://minio0{5...8}/mnt/data-0" on all nodes
+###  Template configure docker-compose before adding new pool on all nodes
 ```
 services:
   <NODE_NAME>:
