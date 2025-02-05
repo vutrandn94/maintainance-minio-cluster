@@ -33,7 +33,7 @@
 ###  Template configure docker-compose before adding new pool on all nodes
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
-| Minio server hostname | root user | root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
+| Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
 ```
 services:
   <NODE_NAME>:
@@ -109,6 +109,9 @@ bash-5.1# mc admin info myminio
 ```
 
 *Edit configure docker-compose according to the template below on all nodes:*
+| NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
+| :--- | :--- | :--- | :--- |
+| Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
 ```
 services:
   <NODE_NAME>:
@@ -271,6 +274,9 @@ Decommission of pool http://minio0{1...4}/mnt/data-0 is complete, you may now re
 ```
 
 *Edit configure docker-compose according to the template below on all nodes:*
+| NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
+| :--- | :--- | :--- | :--- |
+| Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |
 ```
 services:
   <NODE_NAME>:
