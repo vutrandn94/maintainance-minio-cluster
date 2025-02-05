@@ -200,7 +200,7 @@ bash-5.1# mc admin info myminio
 ┌──────┬───────────────────────┬─────────────────────┬──────────────┐
 │ Pool │ Drives Usage          │ Erasure stripe size │ Erasure sets │
 │ 1st  │ 85.2% (total: 20 GiB) │ 4                   │ 1            │
-│ 2nd  │ 0.3% (total: 60 GiB)  │ 4                    │ 1           │
+│ 2nd  │ 0.3% (total: 60 GiB)  │ 4                   │ 1            │
 └──────┴───────────────────────┴─────────────────────┴──────────────┘
 
 17 GiB Used, 4 Buckets, 4 Objects
