@@ -2,6 +2,7 @@
 
 
 *To expand storage capacity for 1 Minio cluster. I have some solutions as follows.*
+
 | Solution | Description | Use cases |
 | :--- | :--- | :--- |
 | Expand storage capacity with LVM | Extending a Logical Volume | Expand storage capacity |
