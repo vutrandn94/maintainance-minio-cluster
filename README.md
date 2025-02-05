@@ -100,9 +100,9 @@ bash-5.1# mc admin info myminio
 ```
 
 ### Step-by-step add new pool and decommission old pool
-*Stopped Minio cluster to adjust configuration to add new pool*
+*Stop Minio cluster to adjust configuration to add new pool*
 ```
-# docker-compose down -d
+# docker-compose down
 ```
 
 *Edit configure docker-compose according to the template below on all nodes*
@@ -132,4 +132,9 @@ services:
 networks:
   minio-net:
     driver: bridge
+```
+
+*Start Minio cluster and verify new pool added*
+```
+# docker-compose up -d
 ```
