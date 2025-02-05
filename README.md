@@ -224,7 +224,7 @@ bash-5.1# mc admin decommission start myminio/ http://minio0{1...4}/mnt/data-0
 Decommission started successfully for `http://minio0{1...4}/mnt/data-0`.
 ```
 
-*Check processs decommission status:*
+*Check processs decommission status (Draining means the decommission process is in progress):*
 ```
 bash-5.1# mc admin decommission status myminio http://minio0{1...4}/mnt/data-0
 
