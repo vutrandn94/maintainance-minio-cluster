@@ -241,3 +241,7 @@ bash-5.1# mc admin decommission status myminio
 │ 2nd │ http://minio0{5...8}/mnt/data-0 │ 17.6% (total: 60 GiB) │ Active   │
 └─────┴─────────────────────────────────┴───────────────────────┴──────────┘
 ```
+
+*Wait for the pool status to change from "Draining" to "Complete" then the pool decommission process is complete*
+> [!NOTE]  
+> At this point, all data in pool 1st has been migrated to pool 2nd and we can remove pool 1st from Minio Cluster to use the storage in pool 2nd (right after removing pool 1st, pool 2nd will automatically be changed to 1st when restarting the cluster).
