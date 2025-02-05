@@ -98,3 +98,9 @@ bash-5.1# mc admin info myminio
 17 GiB Used, 4 Buckets, 4 Objects
 4 drives online, 0 drives offline, EC:2
 ```
+
+### Step-by-step add new pool and decommission old pool
+*Stopped Minio cluster to adjust configuration to add new pool*
+```
+# docker-compose down -d
+```
