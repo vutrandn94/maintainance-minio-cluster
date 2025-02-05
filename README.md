@@ -22,3 +22,7 @@
 | minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
 | minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
 | minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | This pool will be decommissioned after performing the steps below | 
+| minio05 | 172.31.36.170 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool | 
+| minio06 | 172.31.46.10 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool | 
+| minio07 | 172.31.47.245 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool | 
+| minio08 | 172.31.38.9 | http://minio0{5...8}/mnt/data-0 | This pool will replace the just decommissioned pool | 
