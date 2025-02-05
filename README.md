@@ -17,7 +17,7 @@
 > Reference source: https://min.io/docs/minio/linux/operations/install-deploy-manage/decommission-server-pool.html#
 
 > [!IMPORTANT]  
-> Problem: I currently have a pool with a used storage capacity of 85%. Therefore, I need to have an upgrade solution to increase the storage capacity of Minio before running out of storage capacity
+> Problem: I currently have a pool with a used storage capacity of 85%. Therefore, I need to have an upgrade solution to increase the storage capacity of Minio before running out of storage capacity.
 ###  Information about the servers deploying the lab
 | Hostname | IP Address | Pools | Description | 
 | :--- | :--- | :--- | :--- |
