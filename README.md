@@ -393,7 +393,6 @@ bash-5.1# mc admin decommission status myminio
 | minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
 
 ```
-root@minio01:~# lsblk 
 NAME                 MAJ:MIN   RM  SIZE RO TYPE MOUNTPOINTS
 loop0                  7:0      0 26.3M  1 loop /snap/amazon-ssm-agent/9881
 loop1                  7:1      0 63.7M  1 loop /snap/core20/2434
