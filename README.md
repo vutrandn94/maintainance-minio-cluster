@@ -423,12 +423,8 @@ xvdbc                202:13824  0   30G  0 disk
 > Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
 
 > [!NOTE]
-> Replace     
->  volumes:
->      - /mnt/data-0:/mnt/data-0
->  With
->    volumes:
->      - /mnt/data-1:/mnt/data-0
+> Replace define "volumes" from "/mnt/data-0:/mnt/data-0" with "/mnt/data-1:/mnt/data-0"
+
 
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
