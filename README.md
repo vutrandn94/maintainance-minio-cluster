@@ -531,3 +531,6 @@ drwxr-xr-x 3 root root   88 Feb  6 11:14 test
 drwxr-xr-x 3 root root   88 Feb  6 11:13 test1
 drwxr-xr-x 4 root root  102 Feb  6 11:12 test2
 ```
+
+> [!NOTE]
+> Continue doing this for the remaining nodes. ONLY change Physical Volume Mount, does not affect Minio Storage Path.
