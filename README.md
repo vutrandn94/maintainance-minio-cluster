@@ -461,8 +461,6 @@ networks:
 ```
 
 *Start Minio cluster and check healing state:*
->[!TIP]
-> Set up alias ​​for Minio endpoint before executing "mc" commands
 ```
 # docker-compose up -d
 ```
@@ -474,6 +472,9 @@ root@minio01:~/minio-deploy# docker logs -f minio-deploy-minio01-1
 Healing drive 'http://minio01:9000/mnt/data-0' - 'mc admin heal alias/ --verbose' to check the current status.
 Healing drive '/mnt/data-0' - use 4 parallel workers.
 ```
+
+>[!TIP]
+> Set up alias ​​for Minio endpoint before executing "mc" commands
 
 ```
 bash-5.1# mc admin heal myminio/ --verbose
