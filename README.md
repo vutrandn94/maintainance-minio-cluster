@@ -114,6 +114,13 @@ bash-5.1# mc admin info myminio
 ### Step-by-step add new pool and decommission old pool
 >[!TIP]
 > Set up alias ​​for Minio endpoint before executing "mc" commands
+```
+Syntax:
+  mc alias set <ALIAS_NAME> <MINIO_ENDPOINT> <MINIO_ROOT_USER> <MINIO_ROOT_PASSWORD>
+
+Example: 
+  mc alias set myminio http://localhost:9000 root abcdxyzklm
+```
 
 *Stop Minio cluster to adjust configuration to add new pool:*
 ```
