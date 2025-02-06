@@ -443,7 +443,7 @@ services:
       - 9000:9000
       - 9001:9001
     volumes:
-      - /mnt/data-0:/mnt/data-0
+      - /mnt/data-1:/mnt/data-0
     networks:
       - minio-net
     healthcheck:
