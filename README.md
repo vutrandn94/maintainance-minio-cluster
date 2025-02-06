@@ -391,3 +391,7 @@ bash-5.1# mc admin decommission status myminio
 | minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 |
 | minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 |
 | minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 |
+
+### Step-by-step replace mount volume and start healing for new drive
+> [!NOTE]  
+> Do this one node at a time, not all at once.
