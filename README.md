@@ -519,3 +519,15 @@ Summary:
 =======
 No active healing is detected for new disks.
 ```
+
+*Re-check replace physical volume*
+```
+root@minio01:~/minio-deploy# ls -la /mnt/data-1
+total 4
+drwxr-xr-x 6 root root   62 Feb  6 11:11 .
+drwxr-xr-x 4 root root 4096 Feb  6 10:39 ..
+drwxr-xr-x 6 root root   82 Feb  6 11:11 .minio.sys
+drwxr-xr-x 3 root root   88 Feb  6 11:14 test
+drwxr-xr-x 3 root root   88 Feb  6 11:13 test1
+drwxr-xr-x 4 root root  102 Feb  6 11:12 test2
+```
