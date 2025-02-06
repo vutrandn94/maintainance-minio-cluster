@@ -395,3 +395,4 @@ bash-5.1# mc admin decommission status myminio
 ### Step-by-step replace mount volume and start healing for new drive
 > [!NOTE]  
 > Do this one node at a time, not all at once. I will show you the steps for 1 server node. The next servers will do the same.
+> ONLY change Physical Volume Mount, does not affect Minio Storage Path
