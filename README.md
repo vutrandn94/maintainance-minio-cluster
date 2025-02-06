@@ -520,6 +520,13 @@ Summary:
 No active healing is detected for new disks.
 ```
 
+```
+┌─────┬─────────────────────────────────┬───────────────────────┬────────┐
+│ ID  │ Pools                           │ Drives Usage          │ Status │
+│ 1st │ http://minio0{1...4}/mnt/data-0 │ 38.2% (total: 60 GiB) │ Active │
+└─────┴─────────────────────────────────┴───────────────────────┴────────┘
+```
+
 *Re-check replace physical volume*
 ```
 root@minio01:~/minio-deploy# ls -la /mnt/data-1
