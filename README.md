@@ -379,7 +379,7 @@ bash-5.1# mc admin decommission status myminio
 └─────┴─────────────────────────────────┴───────────────────────┴────────┘
 ```
 ###  Information about the servers deploying the lab
-| Hostname | IP Address | Pools | Description | 
+| Hostname | IP Address | Pools |
 | :--- | :--- | :--- | :--- |
 | minio01 | 172.31.40.231 | http://minio0{1...4}/mnt/data-0 |
 | minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 |
