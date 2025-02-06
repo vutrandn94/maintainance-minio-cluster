@@ -385,12 +385,12 @@ bash-5.1# mc admin decommission status myminio
 └─────┴─────────────────────────────────┴───────────────────────┴────────┘
 ```
 ###  Information about the servers deploying the lab
-| Hostname | IP Address | Pools | Minio Storage Path | Physical Volume Mount | 
-| :--- | :--- | :--- | :--- | :--- |
-| minio01 | 172.31.40.231 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 |  /mnt/data-0 |
-| minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 |
-| minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 |
-| minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 |
+| Hostname | IP Address | Pools | Minio Storage Path | Physical Volume Mount | Replace Physical Volume |
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| minio01 | 172.31.40.231 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 |  /mnt/data-0 | /mnt/data-1 |
+| minio02 | 172.31.44.99 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
+| minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
+| minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
 
 ### Step-by-step replace mount volume and start healing for new drive
 > [!NOTE]  
