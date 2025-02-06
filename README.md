@@ -464,26 +464,7 @@ networks:
 
 ```
 root@minio01:~/minio-deploy# docker logs -f minio-deploy-minio01-1
-INFO: Unable to use the drive http://minio02:9000/mnt/data-0: drive not found, will be retried
-INFO: Waiting for all MinIO sub-systems to be initialize...
-INFO: Configured max API requests per node based on available memory: 493
-INFO: All MinIO sub-systems initialized successfully in 4.127346ms
-INFO: IAM load(startup) finished. (duration: 8.667179ms)
----------------------------
-MinIO Object Storage Server
-Copyright: 2015-2025 MinIO, Inc.
-License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
-Version: RELEASE.2025-01-20T14-49-07Z (go1.23.5 linux/amd64)
-
-API: http://172.18.0.2:9000  http://127.0.0.1:9000 
-WebUI: http://172.18.0.2:9001 http://127.0.0.1:9001 
-
-Docs: https://docs.min.io
----------------------------
-INFO: 
- You are running an older version of MinIO released 2 weeks before the latest release 
- Update: Run `mc admin update ALIAS` 
-
+...
 
 Healing drive 'http://minio01:9000/mnt/data-0' - 'mc admin heal alias/ --verbose' to check the current status.
 Healing drive '/mnt/data-0' - use 4 parallel workers.
@@ -511,26 +492,7 @@ Heal rate: 1 obj/s, 351 B/s
 *Wait for the healing progress to complete and check the status again*
 ```
 root@minio01:~/minio-deploy# docker logs -f minio-deploy-minio01-1
-INFO: Unable to use the drive http://minio02:9000/mnt/data-0: drive not found, will be retried
-INFO: Waiting for all MinIO sub-systems to be initialize...
-INFO: Configured max API requests per node based on available memory: 493
-INFO: All MinIO sub-systems initialized successfully in 4.127346ms
-INFO: IAM load(startup) finished. (duration: 8.667179ms)
----------------------------
-MinIO Object Storage Server
-Copyright: 2015-2025 MinIO, Inc.
-License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
-Version: RELEASE.2025-01-20T14-49-07Z (go1.23.5 linux/amd64)
-
-API: http://172.18.0.2:9000  http://127.0.0.1:9000 
-WebUI: http://172.18.0.2:9001 http://127.0.0.1:9001 
-
-Docs: https://docs.min.io
----------------------------
-INFO: 
- You are running an older version of MinIO released 2 weeks before the latest release 
- Update: Run `mc admin update ALIAS` 
-
+...
 
 Healing drive 'http://minio01:9000/mnt/data-0' - 'mc admin heal alias/ --verbose' to check the current status.
 Healing drive '/mnt/data-0' - use 4 parallel workers.
