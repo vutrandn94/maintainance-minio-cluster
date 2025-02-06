@@ -424,11 +424,11 @@ xvdbc                202:13824  0   30G  0 disk
 
 > [!NOTE]
 > Replace     
-    volumes:
-      - /mnt/data-0:/mnt/data-0
-  With
-    volumes:
-      - /mnt/data-1:/mnt/data-0
+>  volumes:
+>      - /mnt/data-0:/mnt/data-0
+>  With
+>    volumes:
+>      - /mnt/data-1:/mnt/data-0
 
 | NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
 | :--- | :--- | :--- | :--- |
