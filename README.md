@@ -456,3 +456,8 @@ networks:
   minio-net:
     driver: bridge
 ```
+
+*Start Minio cluster and check healing state:*
+```
+# docker-compose up -d
+```
