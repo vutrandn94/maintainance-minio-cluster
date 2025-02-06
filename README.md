@@ -417,3 +417,45 @@ xvdbc                202:13824  0   30G  0 disk
 ```
 # docker-compose down
 ```
+
+*Edit configure docker-compose according to the template below in current node:*
+> [!TIP]
+> Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
+> [!NOTE]
+> Replace     
+    volumes:
+      - /mnt/data-0:/mnt/data-0
+  With
+    volumes:
+      - /mnt/data-1:/mnt/data-0
+
+| NODE_NAME | MINIO_ROOT_USER | MINIO_ROOT_PASSWORD | LOCAL_TIMEZONE |
+| :--- | :--- | :--- | :--- |
+| Minio server hostname | Root user | Root user password | Local time zone (Ex: Asia/Ho_Chi_Minh) |   
+```
+services:
+  <NODE_NAME>:
+    image: 'quay.io/minio/minio:RELEASE.2025-01-20T14-49-07Z'
+    restart: always
+    environment:
+      MINIO_ROOT_USER: "<MINIO_ROOT_USER>"
+      MINIO_ROOT_PASSWORD: "<MINIO_ROOT_PASSWORD>"
+      TZ: "<LOCAL_TIMEZONE>"
+    command: server --console-address ":9001" http://minio0{1...4}/mnt/data-0
+    ports:
+      - 9000:9000
+      - 9001:9001
+    volumes:
+      - /mnt/data-0:/mnt/data-0
+    networks:
+      - minio-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 1m
+networks:
+  minio-net:
+    driver: bridge
+```
