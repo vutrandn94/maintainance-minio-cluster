@@ -421,6 +421,7 @@ xvdbc                202:13824  0   30G  0 disk
 *Edit configure docker-compose according to the template below in current node:*
 > [!TIP]
 > Reference: https://github.com/vutrandn94/minio-multi-node-single-drive
+
 > [!NOTE]
 > Replace     
     volumes:
