@@ -114,6 +114,7 @@ bash-5.1# mc admin info myminio
 ### Step-by-step add new pool and decommission old pool
 >[!TIP]
 > Set up alias ​​for Minio endpoint before executing "mc" commands
+
 *Stop Minio cluster to adjust configuration to add new pool:*
 ```
 # docker-compose down
