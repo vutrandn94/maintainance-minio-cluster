@@ -374,7 +374,7 @@ bash-5.1# mc admin decommission status myminio
 ```
 
 
-## SOLUTION: Replace mount volume with one that has more free disk space (Take advantage of the HEALING feature)
+## SOLUTION: Replace physical volume mount with one that has more free disk space (Take advantage of the HEALING feature)
 
 > [!IMPORTANT]  
 > Problem: I currently have a pool with a used storage capacity of 85%. Therefore, I need to have an upgrade solution to increase the storage capacity of Minio before running out of storage capacity.
