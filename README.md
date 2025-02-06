@@ -392,6 +392,24 @@ bash-5.1# mc admin decommission status myminio
 | minio03 | 172.31.36.91 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
 | minio04 | 172.31.40.139 | http://minio0{1...4}/mnt/data-0 | /mnt/data-0 | /mnt/data-0 | /mnt/data-1 |
 
+```
+root@minio01:~# lsblk 
+NAME                 MAJ:MIN   RM  SIZE RO TYPE MOUNTPOINTS
+loop0                  7:0      0 26.3M  1 loop /snap/amazon-ssm-agent/9881
+loop1                  7:1      0 63.7M  1 loop /snap/core20/2434
+loop2                  7:2      0 73.9M  1 loop /snap/core22/1722
+loop3                  7:3      0 89.4M  1 loop /snap/lxd/31333
+loop4                  7:4      0 44.4M  1 loop /snap/snapd/23545
+xvda                 202:0      0   10G  0 disk 
+├─xvda1              202:1      0  9.9G  0 part /
+├─xvda14             202:14     0    4M  0 part 
+└─xvda15             202:15     0  106M  0 part /boot/efi
+xvdb                 202:16     0   10G  0 disk 
+└─minio-data         252:0      0   10G  0 lvm  /mnt/data-0
+xvdbc                202:13824  0   30G  0 disk 
+└─minio--expand-data 252:1      0   30G  0 lvm  /mnt/data-1
+```
+
 ### Step-by-step replace mount volume and start healing for new drive
 > [!NOTE]  
 > Do this one node at a time, not all at once. I will show you the steps for 1 server node. The next servers will do the same. ONLY change Physical Volume Mount, does not affect Minio Storage Path.
