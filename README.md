@@ -412,3 +412,8 @@ xvdbc                202:13824  0   30G  0 disk
 ### Step-by-step replace mount volume and start healing for new drive
 > [!NOTE]  
 > Do this one node at a time, not all at once. I will show you the steps for 1 server node. The next servers will do the same. ONLY change Physical Volume Mount, does not affect Minio Storage Path.
+
+*Stop Minio in current node*
+```
+# docker-compose down
+```
