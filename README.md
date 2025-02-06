@@ -488,3 +488,22 @@ INFO:
 Healing drive 'http://minio01:9000/mnt/data-0' - 'mc admin heal alias/ --verbose' to check the current status.
 Healing drive '/mnt/data-0' - use 4 parallel workers.
 ```
+
+```
+bash-5.1# mc admin heal myminio/ --verbose
+Servers status:
+==============
+Pool 1st:
+  minio01:9000:
+  +  /mnt/data-0 : HEALING
+  |__   Progress: 37%
+  |__    Started: 55 seconds ago
+  |__   Capacity: 3.2 GiB/30 GiB
+
+
+Summary:
+=======
+Objects Healed: 65, 18 KiB (37.5%)
+Objects Failed: 0
+Heal rate: 1 obj/s, 351 B/s
+```
